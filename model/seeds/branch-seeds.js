@@ -67,7 +67,7 @@ const branchData = [
         branch_content:
          `You exit the room and notice no staff, or life of any kind, in the building.
           You see a receptionist desk that looks abandoned and tattered.
-          "I should check for something useful"`,
+          &quot;I should check for something useful.&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -98,13 +98,12 @@ const branchData = [
         branch_title:"Locked Drawer",
         branch_content:
          `The drawer is locked with a 3 digit keypad combination.
-         You see a sticky note that says, "The meaning of the universe?"`,
+         You see a sticky note that says, &quot;The meaning of the universe?&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
                 type: "input",
                 choice_text: "042?",
-                required_item: "flashlight", 
                 next_branch: "Drawer Success",
                 fail_branch: "Drawer flashlight Fail"
             },
@@ -122,11 +121,6 @@ const branchData = [
                 next_branch: "Drawer Fail",
                 fail_branch: "Drawer Fail"
             },
-            {
-                id: uuidv4(),
-                choice_text: "Go back",
-                next_branch: "Reception Desk"
-            }
         ]
     },
     {   
@@ -148,22 +142,6 @@ const branchData = [
                 id: uuidv4(),
                 choice_text: "Go back",
                 next_branch: "Reception Desk"
-            },
-        ]
-    },
-    {   
-        id: uuidv4(),
-        story_reference_id: "andrew's story",
-        reference_id: "7",
-        branch_title:"Drawer flashlight Fail",
-        received_item: "batteries",
-        branch_content:
-         `Huh. What are these for?`,
-        story_choices: [
-            {
-                id: uuidv4(),
-                choice_text: "Go back",
-                next_branch: "Hospital Halls"
             },
         ]
     },
@@ -212,7 +190,7 @@ const branchData = [
         reference_id: "10",
         branch_title:"Stairwell Hallway",
         branch_content:
-         `"Which way to go? Am I talking to myself?"`,
+         `&quot;Which way to go? Am I talking to myself?&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -232,11 +210,11 @@ const branchData = [
         reference_id: "11",
         branch_title:"Down Stairs Init",
         branch_content:
-         `"Ah! An exit door. Finally I can get out of here."
+         `&quot;Ah! An exit door. Finally I can get out of here.&quot;
           You jiggle the handle a few times.
-         "Of course it's locked! Why wouldn't it be locked?!"
+         &quot;Of course it's locked! Why wouldn't it be locked?!&quot;
          You feel dread as you wallow in your mind.
-         "I have to find another way."`,
+         &quot;I have to find another way.&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -347,7 +325,7 @@ const branchData = [
          ═░███▓██████▓███▓████████═══════████▓███
 
          
-         "Oh! You are awake"`,
+         &quot;Oh! You are awake.&quot;`,
         ambient_track: "drone",
         story_choices: [
             {
@@ -368,7 +346,7 @@ const branchData = [
         reference_id: "16",
         branch_title:"Where",
         branch_content:
-         `"You are where you are meant to be..."`,
+         `&quot;You are where you are meant to be...&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -384,7 +362,7 @@ const branchData = [
         branch_title:"Who",
         sound_effect: "ticks",
         branch_content:
-         `"You're the man that killed them... Don't you remember?"
+         `&quot;You're the man that killed them... Don't you remember?&quot;
          
          You almost collapse to the sound of screeching metal.
         By the time you regain your sanity, the figure has disappeared.`,
@@ -451,8 +429,8 @@ const branchData = [
         reference_id: "21",
         branch_title:"1st Floor Hall",
         branch_content:
-         `"Now that power is back this dark and creepy hall isn't so dark and creepy.
-          Don't want to go back into that creepy room."`,
+         `&quot;Now that power is back this dark and creepy hall isn't so dark and creepy.
+          Don't want to go back into that creepy room.&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -544,7 +522,7 @@ const branchData = [
          The feeling of anxiety is back, crushing your ribs
          under the weight of guilt.
          \n\n
-         "Did I kill these people?"
+         &quot;Did I kill these people?&quot;
           \n...
           \nDid you?`,
         story_choices: [
@@ -649,7 +627,7 @@ const branchData = [
         reference_id: "30",
         branch_title:"Hospital Chapel",
         branch_content:
-         `"Back in the chapel."
+         `&quot;Back in the chapel.&quot;
         You try not to look at the photos.`,
         story_choices: [
             {
@@ -672,7 +650,7 @@ const branchData = [
         branch_content:
          `You see a breaker box with cut wires.
          \n\n
-         "I'm no electrician..."`,
+         &quot;I'm no electrician...&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -687,11 +665,11 @@ const branchData = [
         reference_id: "32",
         branch_title:"Elevator Init",
         branch_content:
-         `"Wow, a creepy elevator. No surprise there."
+         `&quot;Wow, a creepy elevator. No surprise there.&quot;
          
          You try the elevator, but it has no power.
          
-         "Guess it's time to become an electrician."`,
+         &quot;Guess it's time to become an electrician.&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -711,7 +689,7 @@ const branchData = [
         reference_id: "33",
         branch_title:"Chapel Closet",
         branch_content:
-         `"Here goes nothing."`,
+         `&quot;Here goes nothing.&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -733,7 +711,7 @@ const branchData = [
         branch_content:
          `You're shocked that this is going so well, then you're just shocked.
          \n\n
-        "Ow! I hate this place!"`,
+        &quot;Ow! I hate this place!&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -750,7 +728,7 @@ const branchData = [
         branch_content:
          `Lights illuminate the room as power fills the hospital.
          
-         "Maybe I found my new career."`,
+         &quot;Maybe I found my new career.&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -788,7 +766,7 @@ const branchData = [
         branch_content:
          `You arrive in a dark and dreary basement.
           You see a dark pit. Whispers fill your mind, begging you to come closer.
-          Whispers seep from the darkness, "Please....I beg you."`,
+          Whispers seep from the darkness, &quot;Please....I beg you.&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -835,7 +813,7 @@ const branchData = [
         branch_content:
          `*SCREeEeeEeEeEEeCH*\n
 
-        "WHAT THE F***!"
+        &quot;WHAT THE F***!&quot;
 
 ⡀⠀⠀⠀⠀⢀⠀⠀⡄⢀⡐⠐⣄⡒⡨⣀⣐⢀⡀⠂⠀⠐⠨⡀⠀⡀⠐⡰⠂⢀⠐⣀⠀⢊⡊⢀⠐⢀⢠⠀⠀⠀⢄⠐⠠⠀⠐⡗⡀⢂⡀⠸⠔⡲⡂⢒⠁⢀⢀⣠⣴⣾⠗⠀⠀
 ⠦⠀⠠⠄⠤⡀⠀⠀⠀⠄⣀⠀⡀⠀⠀⠀⠢⠀⠀⠢⠄⠀⠀⠐⠀⠘⠀⠀⢄⠀⠀⠀⠀⠀⠐⠆⠠⢀⠀⠀⡀⡀⠀⠄⠀⠦⠀⠺⢀⠀⠀⠠⠀⠀⠀⠀⠀⣴⣿⣿⠟⠁⠀⠁⣀
@@ -866,9 +844,9 @@ const branchData = [
 ⠀⢸⣿⣿⣿⣿⣿⠀⠐⠃⠀⠀⢸⣿⣿⡟⣿⣿⣿⡿⢟⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⡛⢿⣿⣿⢿⡗⠅⠀⠈⠠⠂⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⢸⣿⣿⣿⣿⡛⠀⡀⠀⠄⣤⣾⣿⣟⣼⣿⣿⣿⣴⣿⣿⢯⣿⣿⣿⣿⢿⣿⡟⠻⠿⣿⣿⣿⣿⣿⣦⣹⣿⠀⠀⠔⣦⢄⠀⠀
 
-Skeletons in Usison: "WHY DID YOU DO THIS TO US?" \n
+Skeletons in Usison: &quot;WHY DID YOU DO THIS TO US?&quot; \n
 
-Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
+Skeleton in Unison: &quot;JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!&quot;
 
 `,
         story_choices: [
@@ -885,7 +863,7 @@ Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
         reference_id: "41",
         branch_title:"Run",
         branch_content:
-         `"Screw this"
+         `&quot;Screw this&quot;
          *You run the other direction but a skeleton grabs you by the ankle and drags you into the pit
          
          Darkness consumes you*`,
@@ -904,9 +882,9 @@ Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
         branch_title:"Dream",
         branch_content:
          `Horrors and shadows dance around you.\n
-         "There is no hope for you down here\n
+         &quot;There is no hope for you down here\n
          Take a spin to decide your fate \n
-         Meet us on the roof for answers."`,
+         Meet us on the roof for answers.&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -941,7 +919,7 @@ Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
         branch_content:
          `You awake on a pile of uniforms. Shaking with fear you look up only to come to the realization that the "pit" was a laundry chute.\n
          
-         "I can't take it anymore! I have to make it to the roof"`,
+         &quot;I can't take it anymore! I have to make it to the roof&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -976,7 +954,7 @@ Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
         reference_id: "46",
         branch_title:"Laundry Elevator Init",
         branch_content:
-         `"The elevator still works! I guess almost shocking myself to death paid off."`,
+         `&quot;The elevator still works! I guess almost shocking myself to death paid off.&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -994,7 +972,7 @@ Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
         branch_content:
          `Checking every pocket you find a keycard.
          
-         "This must be my ticket to the roof"`,
+         &quot;This must be my ticket to the roof&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -1010,7 +988,7 @@ Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
         branch_title:"Laundry Elevator",
         branch_content:
          `A new elevator button is lit up to take you to the upper floor
-         "Lets do this" "I am doing it again aren't I?"`,
+         &quot;Lets do this&quot; &quot;I am doing it again aren't I?&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -1041,7 +1019,7 @@ Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
         reference_id: "51",
         branch_title:"Stairwell Final",
         branch_content:
-         `"One last palce to go"`,
+         `&quot;One last place to go&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -1057,8 +1035,8 @@ Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
         reference_id: "52",
         branch_title:"Up Stairs Final",
         branch_content:
-         `The door labeled "roof access" lies in front of you
-         "Time to put an end to this"`,
+         `The door labeled &quot;roof access&quot; lies in front of you
+         &quot;Time to put an end to this&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -1076,13 +1054,13 @@ Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
         removed_item: "Keycard",
         branch_content:
          `Fire consumes the roof. You manage to see a structure through the smoke\n\n
-         "Is that a wheel....OF CATS????"
+         &quot;Is that a wheel....OF CATS????&quot;
 
          The names of your victims are arranged on the wheel
          
-         Demon: "You finally arrive. Faced with the names of those you killed"
-         "You live with the guilt of your students blood on your hands."
-         "You will always be killer. So why not kill again?"`,
+         Demon: &quot;You finally arrive. Faced with the names of those you killed&quot;
+         &quot;You live with the guilt of your students blood on your hands.&quot;
+         &quot;You will always be killer. So why not kill again?&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -1100,7 +1078,7 @@ Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
         branch_content:
          `You approach the wheel and take hold of the lever. It feels natural in your hands.
          
-         Demon:"Do what you were born to do, FILTH!"`,
+         Demon:&quot;Do what you were born to do, FILTH!&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -1128,7 +1106,7 @@ Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
         end_here: true,
         branch_content:
          `You hesitantly spin the wheel. It spins infinitly as the fire spreads, engulfing the roof slowly making it's way to your feet.
-         DEMON: "You have chosen wrong my friend"
+         DEMON: &quot;You have chosen wrong my friend&quot;
          The fire clings to your presence and engulfs you. While it does not burn, you are constricted as you watch the wheel spin......FOREVER
 
          
@@ -1162,9 +1140,9 @@ Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
         reference_id: "56",
         branch_title:"Normal Spin",
         branch_content:
-         `DEMON: "Interesting.....You have spun the wheel like you always have."
+         `DEMON: &quot;Interesting.....You have spun the wheel like you always have.&quot;
          Suddenly your memories return to you!
-         DEMON: "I have restored your memories since you are so stuck in your old ways"       
+         DEMON: &quot;I have restored your memories since you are so stuck in your old ways&quot;       
          `,
         story_choices: [
             {
@@ -1186,7 +1164,7 @@ Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
          The haunting memories of what you did to them, the horrors you bestowed on the ones who trusted you.
          It tears you apart.....
 
-         "I can't take it anymore!"
+         &quot;I can't take it anymore!&quot;
 
          Unable to find a safe place within your own mind you see a ledge that was not engulfed by flames.....you jump.
 
@@ -1227,7 +1205,7 @@ Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
          The wheel spins violently as sparks fly.\n
          The wheel shatters as pegs and debris fly every direction.
          
-         DEMON: "NOOOOO"`,
+         DEMON: &quot;NOOOOO&quot;`,
         story_choices: [
             {
                 id: uuidv4(),
@@ -1244,7 +1222,7 @@ Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
         end_here: true,
         branch_content:
          `The sky erupts into a maginficent light, you feel the world crumbling around you.
-         Suddenly you are awoken by a familiar voice that says, "Eli.....you fell asleep during class again"
+         Suddenly you are awoken by a familiar voice that says, &quot;Eli.....you fell asleep during class again&quot;
 
 
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
@@ -1279,7 +1257,7 @@ Skeleton in Unison: "JOIN US! FAIR THAT YOU DIE WHERE YOUR SINS RESIDE!"
         reference_id: "42",
         branch_title:"Altar 2",
         branch_content:
-         `"Ugh these creepy photos are staring at me again. I have to push further"`,
+         `&qwot;Ugh these creepy photos are staring at me again. I have to push further&qwot;`,
         story_choices: [
             {
                 id: uuidv4(),
